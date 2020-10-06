@@ -1,0 +1,46 @@
+<mvc:View controllerName="poc.tablecolorchange.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Table id="tblTrips" inset="false" visible="true" class="sapUiResponsiveMargin" growing="true" growingScrollToLoad="true" width="auto"
+							growingThreshold="10" items="{path:'/Trips'}" noDataText="{i18n>nodatafound}">
+							<headerToolbar>
+								<Toolbar>
+									<Title text="List of Trips" level="H2"/>
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+								<Column demandPopin="true">
+									<Text text="Trip Id"/>
+								</Column>
+								<Column demandPopin="true">
+									<Text text="Vehicle RegNo"/>
+								</Column>
+								<Column demandPopin="true">
+									<Text text="Driver Name"/>
+								</Column>
+								<Column demandPopin="true" hAlign="Center" minScreenWidth="Tablet">
+									<Text text="Assigned Route"/>
+								</Column>
+							
+							</columns>
+							<items>
+								<ColumnListItem vAlign="Middle" type="Inactive">
+									<cells>
+										<Text text="{TripId}" />
+										<Text text="{RegistrationNo}"/>
+										<Text text="{DriverName}"/>
+										<ObjectStatus text="{VehicleRouteFrom}" state="{ path: 'VehicleRouteFrom', formatter: 'poc.tablecolorchange.model.Formatter.status' }"/>
+										
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

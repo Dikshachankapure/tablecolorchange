@@ -1,0 +1,42 @@
+{
+	"Trips": [{
+		"TripId": "101",
+		"RegistrationNo": "GJ1AH7122",
+		"DriverName": "Patel Vijay",
+		"VehicleRouteFrom": "Ahmedabad",
+		"Type":"Success"
+
+	},{
+		"TripId": "102",
+		"RegistrationNo": "GJ1AH7122",
+		"DriverName": "Patel Vijay",
+		"VehicleRouteFrom": "Ahmedabad",
+		"Type":"Warning"
+
+	}, {
+		"TripId": "103",
+		"RegistrationNo": "GJ3FJ1234",
+		"DriverName": "Rabari Sanjay",
+		"VehicleRouteFrom": "Vadodara",
+		"Type":"Warning"
+	},{
+		"TripId": "104",
+		"RegistrationNo": "GJ3FJ1234",
+		"DriverName": "Rabari Sanjay",
+		"VehicleRouteFrom": "Mahesana",
+		"Type":"Warning"
+	},{
+		"TripId": "104",
+		"RegistrationNo": "GJ3FJ1234",
+		"DriverName": "Rabari Sanjay",
+		"VehicleRouteFrom": "Mahesana",
+		"Type":"Error"
+	},{
+		"TripId": "105",
+		"RegistrationNo": "GJ3FJ1234",
+		"DriverName": "Rabari Sanjay",
+		"VehicleRouteFrom": "Ahmedabad",
+		"Type":"Error"
+	}]
+
+}
